@@ -22,13 +22,14 @@ import java.util.Arrays;
  */
 public class Home extends Fragment {
 
-    ArrayList<String> title= new ArrayList<>(Arrays.asList("WoodEssence","Good Looks","Canine Crew","Peak Sports","Dream Shades","Creative Tree","Fur Life","Homemakers Furniture","Magic Drop","Sports Zone","Magic Brush","WoodBling","Team Sweep","Heavenly Clothes"));
-    ArrayList<String> description= new ArrayList<>(Arrays.asList("Shop the luxury furniture you need","Fashion friendly clothes for fashion enthusiasts","For wagging tails and more","When you feel down and out choose to play a sport","Beauty is Whatever Brings Perfect","Adding Creativity Through Brush \n" +
-            "\n" +
-            "A Store that is full of Surprise Fur beings","Decorate your home with Furniture ","Bringing Joy Of Creativity"," Talk with your feet, play with your heart","Adding Beauty Through Brush","Crafted with excellence","Sports are great at relieving stress!","Sports are great at relieving stress!","We provide clothes more than just stitched fabric"));
-    ArrayList<String> category= new ArrayList<>(Arrays.asList("Furniture","Clothing","Pets","Sports","Cosmetics","Arts","Pets","Furniture","Arts","Sports","Cosmetics","Furniture","Sports","Clothing"));
-    ArrayList<String> endDate= new ArrayList<>(Arrays.asList("20-12-20","16-12-20","18-12-20","20-12-20","15-12-20","28-12-20","1-12-20","8-12-20","10-12-20","12-12-20","17-12-20","23-12-20","17-12-20","23-12-20"));
-    Integer[] ar={R.drawable.fur1,R.drawable.cloth4,R.drawable.pet1,R.drawable.sport3,R.drawable.cos3,R.drawable.art1,R.drawable.pet2,R.drawable.fur4,R.drawable.art3,R.drawable.sport1,R.drawable.cos2,R.drawable.fur3,R.drawable.sport2,R.drawable.cloth2};
+    ArrayList<String> iname= new ArrayList<>(Arrays.asList("Rosy","Ram","John","Johnny","Jimmy","Clay","Bob","Ankitha","Girish","Sudarshana","Chethan","Thrinath"));
+    ArrayList<String> iprice= new ArrayList<>(Arrays.asList("20000","30000","34000","20000","10000","14000","50000","45000","36000","20600","60000","74000"));
+    ArrayList<String> icat1= new ArrayList<>(Arrays.asList("Furniture","Clothing","Pets","Sports","Cosmetics","Arts","Pets","Furniture","Arts","Sports","Cosmetics","Furniture"));
+    ArrayList<String> icat2= new ArrayList<>(Arrays.asList("Pets","Furniture","Arts","Sports","Cosmetics","Furniture","Furniture","Clothing","Pets","Sports","Cosmetics","Arts"));
+    ArrayList<String> instafollwers= new ArrayList<>(Arrays.asList("1000","1200","3000","4000","3478","2333","2000","2200","2300","2020","4478","2343"));
+    ArrayList<String> youtubesubscribers= new ArrayList<>(Arrays.asList("3331","4322","5544","3373","2799","7222","6000","5200","5000","4050","3458","5333"));
+    ArrayList<String> fbfollowers= new ArrayList<>(Arrays.asList("3231","4322","3544","7373","6799","7622","7800","8200","5080","4030","2458","4353"));
+    Integer[] ar={R.drawable.fur1,R.drawable.cloth4,R.drawable.pet1,R.drawable.sport3,R.drawable.cos3,R.drawable.art1,R.drawable.pet2,R.drawable.fur4,R.drawable.art3,R.drawable.sport1,R.drawable.cos2,R.drawable.fur3};
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -51,7 +52,7 @@ public class Home extends Fragment {
         linearLayoutManager.setAutoMeasureEnabled(true);
         campaignList.setLayoutManager(linearLayoutManager);
         campaignList.setNestedScrollingEnabled(false);
-        customAdapter customeAdapter =new customAdapter(title,description,category,endDate,ar,getContext());
+        customAdapter customeAdapter =new customAdapter(iname,iprice,icat1,icat2,instafollwers,youtubesubscribers,fbfollowers,ar,getContext());
         campaignList.setAdapter(customeAdapter);
     }
 

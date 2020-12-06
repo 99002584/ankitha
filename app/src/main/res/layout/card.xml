@@ -81,7 +81,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/pricetxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="2dp"
@@ -116,7 +116,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/textView6"
+                                android:id="@+id/categories"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="2dp"
@@ -162,14 +162,14 @@
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:id="@+id/imageView11"
+                                    android:id="@+id/iimage"
                                     android:layout_width="match_parent"
                                     android:layout_height="39dp"
                                     android:layout_weight="1"
                                     app:srcCompat="@drawable/insta_icon" />
 
                                 <TextView
-                                    android:id="@+id/textView25"
+                                    android:id="@+id/ifollowers"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -197,13 +197,14 @@
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:id="@+id/imageView13"
+                                    android:id="@+id/yimage"
                                     android:layout_width="match_parent"
                                     android:layout_height="39dp"
                                     android:layout_weight="1"
                                     app:srcCompat="@drawable/youtube" />
 
                                 <TextView
+                                    android:id="@+id/ysubscribers"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -231,14 +232,14 @@
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:id="@+id/imageView12"
+                                    android:id="@+id/fimage"
                                     android:layout_width="match_parent"
                                     android:layout_height="39dp"
                                     android:layout_weight="1"
                                     app:srcCompat="@drawable/facebook" />
 
                                 <TextView
-                                    android:id="@+id/textView27"
+                                    android:id="@+id/ffollowers"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -280,7 +281,7 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/button2"
+                                android:id="@+id/viewprofile"
                                 android:layout_width="128dp"
                                 android:layout_height="35dp"
                                 android:layout_marginStart="4dp"
@@ -295,7 +296,7 @@
                                 app:backgroundTint="#000000" />
 
                             <Button
-                                android:id="@+id/button3"
+                                android:id="@+id/request"
                                 android:layout_width="128dp"
                                 android:layout_height="35dp"
                                 android:layout_marginStart="4dp"
